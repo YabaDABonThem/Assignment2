@@ -17,16 +17,18 @@ public class Bear extends Critter {
     }
 
     public String toString() {
-        //
+        // use tertiary operator to alternate between returning / and \ every move
         return isOddMove ? "/" : "\\";
     }
 
     public Action getMove(CritterInfo info) {
-        isOddMove = !isOddMove;
+        isOddMove = !isOddMove; // update our move counter
 
+        // if enemy in front then infect
         if (info.getFront() == Neighbor.OTHER) {
             return Action.INFECT;
         }
+        // in nothing in front then hop, otherwise turn left
         else if (info.getFront() == Neighbor.EMPTY) {
             return Action.HOP;
         }
