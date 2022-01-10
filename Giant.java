@@ -14,7 +14,7 @@ public class Giant extends Critter{
     }
 
     public String toString() {
-        return stringOptions[moveCounter%24/6];
+        return stringOptions[moveCounter%(stringOptions.length*6)/6];
     }
 
     public Action getMove(CritterInfo info) {

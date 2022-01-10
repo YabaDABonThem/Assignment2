@@ -15,7 +15,7 @@ public class Lion extends Critter {
 
     public Color getColor() {
         if (moveCounter % 3 == 0) {
-            currentColor = colors[random.nextInt()];
+            currentColor = colors[random.nextInt(colors.length)];
         }
         return currentColor;
     }
