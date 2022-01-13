@@ -8,7 +8,7 @@ public class Bear extends Critter {
     public Bear(boolean isBlack) {
         this.isBlack = isBlack;
 
-        isOddMove = false; // start at 0th move
+        isOddMove = true; // this is to start at "0th" move, because getMove() flips the variable
     }
 
     public Color getColor() {
