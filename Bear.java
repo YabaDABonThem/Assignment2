@@ -1,3 +1,8 @@
+// Name: Allen Bao
+// Date: 1/14/2022
+// Class: CS 211
+// Reason for Code: This is the code for the AB critter for the Critters Assignment
+
 import java.awt.*;
 
 public class Bear extends Critter {
